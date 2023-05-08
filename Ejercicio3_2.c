@@ -9,7 +9,7 @@ int main () {
 
     f(x) = {5x + 2 si <=3
             -------------
-            4x - 5 si x > x
+            4x - 5 si x > 3
     */
 
     int x;
@@ -17,6 +17,19 @@ int main () {
     printf ("Ingrese el valor de x: ");
     fflush(stdin);
     scanf("%d", &x);
+
+
+    if (x <= 3) {
+
+        x = (5 * x) + 2;
+
+    } else if (x > 3) {
+
+        x = (4 * x) - 5;
+
+    }
+
+
 
 
 
