@@ -16,21 +16,36 @@ int main () {
     int nota1, nota2, nota3, promedio;
 
 
-    printf ("Ingrese el nombre y apellido del estudiante: ");
+    printf ("\nIngrese el nombre y apellido del estudiante: ");
     fflush (stdin);
     scanf("%s", &nombre);
 
-    printf ("\nIngrese el numero de matricula del estudiante: ");
+    printf ("\n\nIngrese el numero de matricula del estudiante: ");
     fflush (stdin);
     scanf("%d", &matricula);
 
-    printf ("\nIngrese tres notas del estudiante: ");
+    printf ("\n\nIngrese tres notas del estudiante: ");
     fflush (stdin);
     scanf("%d %d %d", &nota1, &nota2, &nota3);
 
     promedio = (nota1 + nota2 + nota3) / 3;
 
-    printf ("\nEl nombre del estudiante es: %s", nombre);
-    printf ("\nEl numero de matricula del estudiante es: %d", matricula);
+    printf ("\n\nEl nombre del estudiante es: %s", nombre);
+    printf ("\n\nEl numero de matricula del estudiante es: %d", matricula);
+
+
+    if (promedio >= 9) {
+
+        printf("\n\nEl estudiante esta aprobado con un promedio sobresaliente de %d\n\n", promedio);
+
+    } else if (promedio >= 6) {
+
+        printf("\n\nEl estudiante esta aprobado con un promedio de %d\n\n", promedio);
+
+      } else {
+
+        printf("\n\nEl estudiante esta desaprobado con un promedio de %d\n\n", promedio);
+
+        }
 
 }
