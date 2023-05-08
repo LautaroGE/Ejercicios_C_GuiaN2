@@ -10,7 +10,7 @@ int main () {
     //Ingresar tres valores decimales, calcular e imprimir el mínimo.
     //Ingresar tres datos de tipo carácter (letras), escribirlos ordenados alfabéticamente.
 
-    int dia, mes;
+   /* int dia, mes;
 
     printf("Ingrese el mes de su nacimiento: ");
     fflush(stdin);
@@ -29,10 +29,17 @@ int main () {
 
         printf("\n\nfalse\n\n");
 
-    }
+    } */
+
+
+    float a,b,c;
+
+    printf ("Ingrese tres valores decimales: ");
+    fflush (stdin);
+    scanf ("%f %f %f", &a, &b, &c);
 
 
 
-
+    system ("pause");
 
 }
