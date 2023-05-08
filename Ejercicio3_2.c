@@ -22,17 +22,16 @@ int main () {
     if (x <= 3) {
 
         x = (5 * x) + 2;
+        printf("\n\nf(x) = %d\n\n", x);
 
     } else if (x > 3) {
 
         x = (4 * x) - 5;
+        printf("\n\nf(x) = %d\n\n", x);
 
     }
 
-
-
-
-
+    system ("pause");
 
 
 }
