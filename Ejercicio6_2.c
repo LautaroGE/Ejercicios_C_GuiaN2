@@ -13,22 +13,24 @@ int main () {
 
     char nombre[20];
     int matricula;
-    int nota1, nota2, nota3;
+    int nota1, nota2, nota3, promedio;
 
 
     printf ("Ingrese el nombre y apellido del estudiante: ");
     fflush (stdin);
     scanf("%s", &nombre);
 
-    printf ("Ingrese el numero de matricula del estudiante: ");
+    printf ("\nIngrese el numero de matricula del estudiante: ");
     fflush (stdin);
     scanf("%d", &matricula);
 
-    printf ("Ingrese tres notas del estudiante: ");
+    printf ("\nIngrese tres notas del estudiante: ");
     fflush (stdin);
     scanf("%d %d %d", &nota1, &nota2, &nota3);
 
+    promedio = (nota1 + nota2 + nota3) / 3;
 
-
+    printf ("\nEl nombre del estudiante es: %s", nombre);
+    printf ("\nEl numero de matricula del estudiante es: %d", matricula);
 
 }
