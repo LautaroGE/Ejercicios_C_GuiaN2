@@ -32,7 +32,7 @@ int main () {
     } */
 
 
-    float a,b,c;
+    /*float a,b,c;
 
     printf ("Ingrese tres valores decimales: ");
     fflush (stdin);
@@ -50,8 +50,41 @@ int main () {
 
         printf("\n%g\n", c);
 
+    } */
+
+    char a,b,c;
+
+    printf("Ingrese 3 caracteres: ");
+    fflush (stdin);
+    scanf("%c %c %c", &a, &b, &c);
+
+
+    if (a > b) {
+
+        char tempC = a;
+        a = b;
+        b = tempC;
+
     }
 
+    if (b > c) {
+
+        char tempC = b;
+        b = c;
+        c = tempC;
+
+    }
+
+
+    if (a > b) {
+
+        char tempC = a;
+        a = b;
+        b = tempC;
+
+    }
+
+    printf("Los caracteres ordenados alfabeticamente son: %c %c %c\n", a, b, c);
 
     system ("pause");
 
