@@ -15,8 +15,11 @@ int main () {
 
     if (numero % 2 == 0) {
 
-        printf("\nEl numero es par\n\n")
+        printf("\nEl numero es par\n\n");
 
+    } else {
+
+        printf("\nEl numero es impar\n\n");
     }
 
 
