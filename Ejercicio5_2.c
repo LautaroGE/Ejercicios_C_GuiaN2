@@ -38,6 +38,19 @@ int main () {
     fflush (stdin);
     scanf ("%f %f %f", &a, &b, &c);
 
+    if (a < b & a < c) {
+
+        printf("\n%g\n", a);
+
+    } else if (b<a & b<c) {
+
+        printf ("\n%g\n", b);
+
+    } else {
+
+        printf("\n%g\n", c);
+
+    }
 
 
     system ("pause");
