@@ -25,9 +25,11 @@ int main () {
     Se pide: Ingresar categoría y cantidad de GB para un abonado y determinar el importe a pagar.
     */
 
+    //declaracion de variables
     int opc, abono, valorgb;
     float gb, total;
 
+    //ingreso de datos
     printf("\nBienvenido al servicio de facturacion.\n\n");
     fflush(stdin);
 
@@ -47,6 +49,7 @@ int main () {
     }
 
 
+
     switch (opc){
 
         case 1:
@@ -55,13 +58,13 @@ int main () {
 
             while (valorgb < 1 || valorgb > 4) {
 
-                printf("\nPresione 1 si usted tiene una cantidad de gb de entre 0 y 200\n\n");
+                printf("\nPresione 1 si tiene una cantidad de gb de entre 0 y 200\n\n");
                 fflush(stdin);
-                printf("\nPresione 2 si usted tiene una cantidad de gb de entre 201 y 400\n\n");
+                printf("\nPresione 2 si tiene una cantidad de gb de entre 201 y 400\n\n");
                 fflush(stdin);
-                printf("\nPresione 3 si usted tiene una cantidad de gb de entre 401 y 1000\n\n");
+                printf("\nPresione 3 si tiene una cantidad de gb de entre 401 y 1000\n\n");
                 fflush(stdin);
-                printf("\nPresione 4 si usted tiene una cantidad de gb de más de 1000\n\n");
+                printf("\nPresione 4 si tiene una cantidad de gb de más de 1000\n\n");
                 fflush(stdin);
 
                 scanf ("%d", &valorgb);
@@ -93,14 +96,113 @@ int main () {
                         total = gb * abono;
                         printf("\n\nEl valor total a pagar es de: %g \n\n", total);
 
-                      }
+                      } //fin del if
+
+                      break; //fin del caso 1.
+
+
+        case 2:
+
+            abono = 500;
+
+            while (valorgb < 1 || valorgb > 4) {
+
+                printf("\nPresione 1 si tiene una cantidad de gb de entre 0 y 250\n\n");
+                fflush(stdin);
+                printf("\nPresione 2 si tiene una cantidad de gb de entre 251 y 500\n\n");
+                fflush(stdin);
+                printf("\nPresione 3 si tiene una cantidad de gb de entre 501 y 1000\n\n");
+                fflush(stdin);
+                printf("\nPresione 4 si tiene una cantidad de gb de más de 1000\n\n");
+                fflush(stdin);
+
+                scanf ("%d", &valorgb);
+
+            }
+
+                if (valorgb == 1) {
+
+                    gb = 0.7;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                } else if (valorgb == 2) {
+
+                    gb = 1.1;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+
+                  } else if (valorgb == 3) {
+
+                        gb = 1.3;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                    } else if (valorgb == 4) {
+
+                        gb = 1.5;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                      } //fin del if
+
+                      break; //fin del caso 2.
 
 
 
+        case 3:
+
+            abono = 700;
+
+            while (valorgb < 1 || valorgb > 4) {
+
+                printf("\nPresione 1 si tiene una cantidad de gb de entre 0 y 200\n\n");
+                fflush(stdin);
+                printf("\nPresione 2 si tiene una cantidad de gb de entre 201 y 400\n\n");
+                fflush(stdin);
+                printf("\nPresione 3 si tiene una cantidad de gb de entre 401 y 1000\n\n");
+                fflush(stdin);
+                printf("\nPresione 4 si tiene una cantidad de gb de más de 1000\n\n");
+                fflush(stdin);
+
+                scanf ("%d", &valorgb);
+
+            }
+
+                if (valorgb == 1) {
+
+                    gb = 0.9;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                } else if (valorgb == 2) {
+
+                    gb = 1.2;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+
+                  } else if (valorgb == 3) {
+
+                        gb = 1.5;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                    } else if (valorgb == 4) {
+
+                        gb = 1.7;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                      } //fin del if
+
+                      break; //fin del caso 3.
 
     } //fin del switch
 
-     system ("pause");
 
 
-}
+  system ("pause");
+
+} //fin del programa
