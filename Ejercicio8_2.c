@@ -16,16 +16,16 @@ int main () {
 
     int a;
 
-    printf ("Ingrese valor de prueba");
-    fflush(stdin)
+    printf ("Ingrese valor de prueba: ");
+    fflush(stdin);
     scanf("%d",&a);
 
-    if (a / 2 == 0){
+    if (a % 2 == 0){
 
         printf("\n%d es múltiplo de 2\n",a);
 
 
-        if (a / 3 == 0) {
+        if (a % 3 == 0) {
 
             printf("\ny también de 3 \n", a);
 
@@ -33,10 +33,10 @@ int main () {
 
             } else {
 
-                printf("pero no de 3 \n",);
+                printf("pero no de 3 \n");
               }
 
-    } else if (a / 3 == 0) {
+    } else if (a % 3 == 0) {
 
          printf("%d es múltiplo de 3 pero no de 2", a);
 
