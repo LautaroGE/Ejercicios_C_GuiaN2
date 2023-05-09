@@ -22,27 +22,30 @@ int main () {
 
     if (a % 2 == 0){
 
-        printf("\n%d es múltiplo de 2\n",a);
+        printf("\n%d es multiplo de 2\n\n",a);
 
 
         if (a % 3 == 0) {
 
-            printf("\ny también de 3 \n", a);
+            printf("\ny también de 3 \n\n", a);
 
-            printf("por lo tanto lo %d es multiplo de 6 \n", a);
+            printf("\npor lo tanto lo %d es multiplo de 6 \n\n", a);
 
             } else {
 
-                printf("pero no de 3 \n");
+                printf("\npero no de 3 \n\n");
               }
 
     } else if (a % 3 == 0) {
 
-         printf("%d es múltiplo de 3 pero no de 2", a);
+         printf("\n%d es multiplo de 3 pero no de 2\n\n", a);
 
       } else {
 
-         printf("%d no es múltiplo de 2 ni de 3", a);
+         printf("\n%d no es multiplo de 2 ni de 3\n\n", a);
         }
 
+
+
+    system ("pause");
 }
