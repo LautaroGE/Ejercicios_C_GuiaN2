@@ -25,7 +25,7 @@ int main () {
     Se pide: Ingresar categoría y cantidad de GB para un abonado y determinar el importe a pagar.
     */
 
-    int opc;
+    int opc, abono;
 
     printf("\nBienvenido al servicio de facturacion.\n\n");
     fflush(stdin);
@@ -33,14 +33,32 @@ int main () {
     printf("\nA continuacion, ingrese su categoria: \n\n");
     fflush(stdin);
 
-    printf("\nPresione 1 si pertenece a la categoria Particular\n\n");
-    fflush(stdin);
-    printf("\nPresione 2 si pertenece a la categoria Profesional\n\n");
-    fflush(stdin);
-    printf("\nPresione 3 si pertenece a la categoria Comercial\n\n");
-    fflush(stdin);
+    while (opc < 1 || opc > 3) {
 
-    scanf ("%d", &opc)
+        printf("\nPresione 1 si pertenece a la categoria Particular\n\n");
+        fflush(stdin);
+        printf("\nPresione 2 si pertenece a la categoria Profesional\n\n");
+        fflush(stdin);
+        printf("\nPresione 3 si pertenece a la categoria Comercial\n\n");
+        fflush(stdin);
 
+        scanf ("%d", &opc);
+    }
+
+    if (opc == 1) {
+
+        abono = 300;
+
+    } else if (opc == 2) {
+
+        abono = 500;
+
+      } else {
+
+            abono = 700;
+
+        }
+
+    printf ("su abono es de %d", abono);
 
 }
