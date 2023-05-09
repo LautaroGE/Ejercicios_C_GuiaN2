@@ -14,31 +14,35 @@ int main () {
 
     */
 
+    int a;
+
+    printf ("Ingrese valor de prueba");
+    fflush(stdin)
     scanf("%d",&a);
 
     if (a / 2 == 0){
 
-        printf("%d es múltiplo de %d",a, .........);
+        printf("\n%d es múltiplo de 2\n",a);
 
 
-    if (a / 3 == 0) {
+        if (a / 3 == 0) {
 
-        printf("y también de %d \n", ........);
+            printf("\ny también de 3 \n", a);
 
-        printf("por lo tanto lo es de%d \n", .......);
+            printf("por lo tanto lo %d es multiplo de 6 \n", a);
 
             } else {
 
-                printf("pero no de %d \n",..….);
+                printf("pero no de 3 \n",);
               }
 
     } else if (a / 3 == 0) {
 
-         printf("%d es múltiplo de %d pero no de %d", a, ….,….);
+         printf("%d es múltiplo de 3 pero no de 2", a);
 
       } else {
 
-         printf("%d no es múltiplo de %d ni de %d", a,…,….);
+         printf("%d no es múltiplo de 2 ni de 3", a);
         }
 
 }
