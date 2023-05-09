@@ -25,7 +25,8 @@ int main () {
     Se pide: Ingresar categoría y cantidad de GB para un abonado y determinar el importe a pagar.
     */
 
-    int opc, abono;
+    int opc, abono, valorgb;
+    float gb, total;
 
     printf("\nBienvenido al servicio de facturacion.\n\n");
     fflush(stdin);
@@ -45,20 +46,61 @@ int main () {
         scanf ("%d", &opc);
     }
 
-    if (opc == 1) {
 
-        abono = 300;
+    switch (opc){
 
-    } else if (opc == 2) {
+        case 1:
 
-        abono = 500;
+            abono = 300;
 
-      } else {
+            while (valorgb < 1 || valorgb > 4) {
 
-            abono = 700;
+                printf("\nPresione 1 si usted tiene una cantidad de gb de entre 0 y 200\n\n");
+                fflush(stdin);
+                printf("\nPresione 2 si usted tiene una cantidad de gb de entre 201 y 400\n\n");
+                fflush(stdin);
+                printf("\nPresione 3 si usted tiene una cantidad de gb de entre 401 y 1000\n\n");
+                fflush(stdin);
+                printf("\nPresione 4 si usted tiene una cantidad de gb de más de 1000\n\n");
+                fflush(stdin);
 
-        }
+                scanf ("%d", &valorgb);
 
-    printf ("su abono es de %d", abono);
+            }
+
+                if (valorgb == 1) {
+
+                    gb = 0.5;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                } else if (valorgb == 2) {
+
+                    gb = 0.7;
+                    total = gb * abono;
+                    printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+
+                  } else if (valorgb == 3) {
+
+                        gb = 1.0;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                    } else if (valorgb == 4) {
+
+                        gb = 1.2;
+                        total = gb * abono;
+                        printf("\n\nEl valor total a pagar es de: %g \n\n", total);
+
+                      }
+
+
+
+
+    } //fin del switch
+
+     system ("pause");
+
 
 }
